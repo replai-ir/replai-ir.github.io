@@ -6,16 +6,65 @@
   .link {
     @apply flex justify-center items-center w-full h-full;
   }
+
   /* just hero */
-  .section:nth-of-type(2n) {
-    @apply min-h-[90vh] my-[5vh] flex flex-col justify-center items-center mx-[2rem] md:flex-row-reverse md:mx-[6.25rem] md:justify-between;
+  .section {
+    @apply flex flex-col justify-center items-start min-h-[90vh] my-[5vh] md:justify-between md:items-center;
   }
+
+  .section:nth-of-type(2n) {
+    @apply md:flex-row-reverse;
+  }
+
+  .section:nth-of-type(2n + 1) {
+    @apply md:flex-row;
+  }
+
+  .section:nth-of-type(2n) img {
+    @apply ml-4;
+  }
+
+  .section:nth-of-type(2n + 1) img {
+    @apply mr-4;
+  }
+
   .section:nth-of-type(2n):first-child,
   .section:nth-of-type(2n):last-child {
-    @apply w-[100] md:w-[40%];
+    @apply w-[100px] md:w-[40%];
   }
-  .section:nth-of-type(2n + 1) {
-    @apply h-[90vh] my-[5vh] flex flex-col justify-center items-center mx-[2rem] md:flex-row md:mx-[6.25rem] md:justify-between;
+
+  .section p {
+    @apply mt-[1.25rem];
+  }
+
+  .section img {
+    @apply mt-10 md:mt-0;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Iran Yekan";
+    font-weight: 400;
+    src: url("../public/assets/fonts/IRANYekan/iranyekanwebregularfanum.woff");
+  }
+
+  @font-face {
+    font-family: "Iran Yekan";
+    font-weight: 700;
+    src: url("../public/assets/fonts/IRANYekan/iranyekanwebboldfanum.woff");
+  }
+
+  @font-face {
+    font-family: "Iran Yekan";
+    font-weight: 800;
+    src: url("../public/assets/fonts/IRANYekan/iranyekanwebextraboldfanum.woff");
+  }
+
+  @font-face {
+    font-family: "Helvetic Neue";
+    font-weight: 700;
+    src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueCyr-Bold.otf");
   }
 }
 
@@ -27,22 +76,37 @@
 
 html {
   font-size: 12px;
+  font-family: "Iran Yekan";
   overflow-x: hidden;
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
+  max-width: 400px;
+  color: #404040;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 800;
+  max-width: 390px;
+  color: #404040;
 }
 
 p {
   font-size: 1rem;
   font-weight: 400;
+  max-width: 370px;
+  color: #404040;
+}
+
+img {
+  user-select: none;
+}
+
+.try-replai {
+  font-weight: 800;
 }
 
 /* 

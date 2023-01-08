@@ -7,31 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        slightyBlack: "#303030",
+        blackColor: "#404040",
         blueColor: "#4E69FE",
         whiteColor: "#FFFFFF",
         grayColor: "#F8F8F8",
       },
-      borderRadius: {
-        md: "0.75rem",
-        "2xl": "1.675rem",
-      },
       fontFamily: {
-        Impact: "Impact",
-        HelveticaNeue: "Helvetica Neue",
+        helveticNeue: ["Helvetic Neue"],
       },
       fontSize: {
-        lg: [
-          "1.25rem",
-          {
-            lineHeight: "1.75rem",
-            fontWeight: "700",
-          },
-        ],
-        "4xl": ["2rem", { lineHeight: "2.5rem", fontWeight: "700" }],
-        "5xl": ["2.5rem", { lineHeight: "3rem", fontWeight: "700" }],
+        "4xl": ["2rem", "3rem"],
+        "5xl": ["2.5rem", "3.5rem"],
       },
-      backgroundImage: {},
     },
   },
   plugins: [],
