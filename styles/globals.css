@@ -40,6 +40,10 @@
   .section img {
     @apply mt-10 md:mt-0;
   }
+
+  .section-type2 {
+    @apply flex flex-col justify-between items-center min-h-[60vh] mt-[40vh] mb-[40vh];
+  }
 }
 
 @layer base {
