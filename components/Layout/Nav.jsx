@@ -1,6 +1,6 @@
 import Image from "next/image";
 import replaiLogo from "../../public/assets/svg/replai_logo.svg";
-import replaiTextLogo from "../../public/assets/svg/replai_text-Logo.svg";
+import replaiTextLogo from "../../public/assets/svg/replai_text-logo.svg";
 
 export default function Nav() {
   return (
