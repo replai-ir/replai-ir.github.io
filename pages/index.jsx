@@ -41,19 +41,19 @@ function HomePage() {
       color: "#9AAAFF",
     },
     {
-      statistics: 687457,
+      statistics: 35457,
       title: "نظرات احساس مثبت",
       icon: positiveCommentsIcon,
       color: "#4ECDC4",
     },
     {
-      statistics: 687457,
+      statistics: 1931,
       title: "نظرات اعتراض به قیمت",
       icon: protestpriceCommentsIcon,
       color: "#FD8A9C",
     },
     {
-      statistics: 687457,
+      statistics: 10348,
       title: "نظرات اشکال فنی",
       icon: technicalissuesCommentsIcon,
       color: "#FDCC7C",
@@ -135,7 +135,7 @@ function HomePage() {
 
         <div className="section-type2">
           <h2>آمار ریپلای تاکنون</h2>
-          <div className="flex flex-wrap justify-between w-full min-h-[330px] py-[3.5rem] px-[2rem] mt-[3.25rem] bg-grayColor md:grid-cols-2 gap-4 md:px-[8rem] lg:px-[12rem] [&>div:nth-child(even)]:justify-end">
+          <div className="flex flex-wrap justify-between w-full min-h-[330px] py-[3.5rem] px-[2rem] mt-[3.25rem] bg-grayColor gap-4 md:px-[4rem] md:grid-cols-2 lg:px-[6rem] sm:pr-[6rem] md:pr-[8rem] lg:pr-[12rem] xl:pr-[14rem]">
             {statisticsArray.map((statisticsItem) => (
               <Statistics
                 key={statisticsItem.title}
