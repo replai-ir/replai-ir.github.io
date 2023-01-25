@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="h-[70px] bg-grayColor flex items-center justify-center md:h-[100px]">
       <Link href="https://roshan-ai.ir" className="flex flex-col items-center">
         <Image src={logoFooter} alt="logo-footer" className="mb-2" />
-        <p>شرکت دانش بنیان(راهکار پردازش ژرف)</p>
+        <p>شرکت دانش بنیان «راهکار پردازش ژرف»</p>
       </Link>
     </footer>
   );

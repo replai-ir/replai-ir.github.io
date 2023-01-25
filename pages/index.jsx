@@ -6,8 +6,8 @@ import Layout from "../components/Layout/Layout";
 import Footer from "../components/Footer/Footer";
 import Button from "../components/UI/Button";
 import Statistics from "../components/UI/Statistics";
+import ProductDescription from "../components/UI/ProductDescription";
 
-import elipse from "../public/assets/svg/elipse.svg";
 import heroImage from "../public/assets/image/hero_image.svg";
 
 import analaysisCommentsImage from "../public/assets/image/analysis-comments_image.svg";
@@ -68,6 +68,30 @@ function HomePage() {
     { image: naft, alt: "naft" },
   ];
 
+  const productDescroptions = [
+    {
+      title: "تحلیل نظرات کاربران",
+      description:
+        "ریپلای اطلاعات جامعی از نظرات کاربران در ,اختیار شما قرار می دهد",
+      image: analaysisCommentsImage,
+      imageAlt: "analysis-comments",
+    },
+    {
+      title: "کافه بازار و گوگل پلی یکجا در پنل ریپلای شما",
+      description:
+        "ریپلای نظرات دریافتی در مارکت های مختلف را تجمیع کرده و یکجا در اختیار شما قرار می دهد",
+      image: appStoreImage,
+      imageAlt: "app-store",
+    },
+    {
+      title: "پاسخگویی خودکار به نظرات",
+      description:
+        "ریپلای به سلیقه شما به نظراتی که نیاز پاسخ شما دارند،‌ به صورت خودکار پاسخ می دهد",
+      image: autoReplyImage,
+      imageAlt: "auto-reply",
+    },
+  ];
+
   return (
     <Layout>
       <Head>
@@ -76,80 +100,38 @@ function HomePage() {
         <link rel="icon" href="/assets/svg/replai_logo.svg" />
       </Head>
 
-      <Image
-        src={elipse}
-        alt="elipse"
-        className="-z-10 absolute top-0 left-0 w-[50vw]"
-      />
-
-      <main className="mx-[2rem] md:mx-[8rem]">
-        <div className="min-h-[90vh] mb-[10vh] flex flex-row justify-between items-center">
-          <div>
-            <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
-            <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
-              ریپلای نظرات دریافتی در پنل کافه بازار و گوگل پلی را تحلیل و دسته
-              بندی می کند و به صورت خودکار پاسخ می دهد
-            </p>
-            <Button className="bg-blueColor text-whiteColor">
-              <Link href={app_url} className="link">
-                ورود به ریپلای
-              </Link>
-            </Button>
-          </div>
-          <div className="relative w-[0] md:w-[400px] lg:w-[600px]">
-            <Image
-              src={heroImage}
-              alt="hero"
-              className="w-full absolute left-0 top-1/2 -translate-y-1/2"
-            />
-          </div>
+      <div className="min-h-[90vh] mb-[10vh] flex flex-row justify-between items-center">
+        <div className="mar-right md:w-[45%] lg:w-[50%]">
+          <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
+          <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
+            ریپلای نظرات دریافتی در پنل کافه بازار و گوگل پلی را تحلیل و دسته
+            بندی می کند و به صورت خودکار پاسخ می دهد
+          </p>
+          <Button className="bg-blueColor text-whiteColor">
+            <Link href={app_url} className="link">
+              ورود به ریپلای
+            </Link>
+          </Button>
         </div>
-
-        <section className="section">
-          <div>
-            <h2>تحلیل نظرات کاربران</h2>
-            <p>
-              ریپلای اطلاعات جامعی از نظرات کاربران در اختیار شما قرار می دهد
-            </p>
-          </div>
-          <Image src={analaysisCommentsImage} alt="analysis-comments" />
-        </section>
-
-        <section className="section">
-          <div>
-            <h2>کافه بازار و گوگل پلی یکجا در پنل ریپلای شما</h2>
-            <p>
-              ریپلای نظرات دریافتی در مارکت های مختلف را تجمیع کرده و یکجا در
-              اختیار شما قرار می دهد
-            </p>
-          </div>
-          <Image src={appStoreImage} alt="app-store" />
-        </section>
-
-        <section className="section">
-          <div>
-            <h2>پاسخگویی خودکار به نظرات</h2>
-            <p>
-              ریپلای به سلیقه شما به نظراتی که نیاز پاسخ شما دارند،‌ به صورت
-              خودکار پاسخ می دهد
-            </p>
-          </div>
-          <Image src={autoReplyImage} alt="app-store" />
-        </section>
-
-        <section className="section">
-          <div>
-            <h2>شناسایی و دسته‌بندی محتوا</h2>
-            <p>
-              ریپلای نظرات حاوی اشکال فنی، مشکل در پرداخت، احساس مثبت و منفی و
-              بسیاری دیگر را می‌شناسد و آن ها را دسته بندی می‌کند
-            </p>
-          </div>
+        <div className="relative w-[0] md:w-[40%] lg:w-[45%]">
           <Image
-            src={identificationCommentsImage}
-            alt="identification-comments"
+            src={heroImage}
+            alt="hero"
+            className="w-full absolute left-0 top-1/2 -translate-y-1/2"
           />
-        </section>
+        </div>
+      </div>
+
+      <main className="w-[75%] mx-auto sm:w-[85%] md:w-[80%] lg:w-[75%] xl:w-[70%] 2xl:w-[65%]">
+        {productDescroptions.map((productDes) => (
+          <ProductDescription
+            key={productDes.title}
+            title={productDes.title}
+            description={productDes.description}
+            image={productDes.image}
+            imageAlt={productDes.imageAlt}
+          />
+        ))}
 
         <div className="section-type2">
           <h2>آمار ریپلای تاکنون</h2>
