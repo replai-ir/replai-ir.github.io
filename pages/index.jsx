@@ -104,7 +104,7 @@ function HomePage() {
         />
       </Head>
 
-      <div className="min-h-[90vh] mb-[10vh] flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center min-h-[90vh] pl-8 mb-[10vh] ">
         <div className="mar-right md:w-[45%] lg:w-[50%]">
           <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
           <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
