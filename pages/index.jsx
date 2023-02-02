@@ -188,7 +188,7 @@ function HomePage() {
           className="flex flex-col justify-center items-center w-full h-[40vh] mb-[20vh] rounded-2xl bg-blueColor bg-cover bg-center md:h-[80vh]
       "
           style={{
-            backgroundImage: `url('/assets/image/give_replai_try.svg')`,
+            backgroundImage: `url('assets/image/give_replai_try.svg')`,
           }}
         >
           <p className="try-replai max-w-[700px] px-8 mb-[2.25rem] text-center text-2xl text-whiteColor md:text-5xl">
