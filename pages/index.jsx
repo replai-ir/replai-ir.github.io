@@ -97,7 +97,11 @@ function HomePage() {
       <Head>
         <title>ریپلای</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/assets/svg/replai_logo.svg" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="assets/svg/replai_logo.svg"
+        />
       </Head>
 
       <div className="min-h-[90vh] mb-[10vh] flex flex-row justify-between items-center">
