@@ -7,15 +7,6 @@
   margin: 5vh 0;
 }
 
-.section img {
-  min-width: 300px;
-}
-
-.section:nth-of-type(2n) div:last-of-type,
-.section:nth-of-type(2n + 1) div:first-of-type {
-  margin-top: 2rem;
-}
-
 .section:nth-of-type(2n):first-child,
 .section:nth-of-type(2n):last-child {
   width: 100px;
@@ -25,9 +16,14 @@
   margin-top: 1.25rem;
 }
 
-.section img {
+.section .img-1 {
   width: 100%;
   margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.section .img-2 {
+  width: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -44,7 +40,11 @@
     flex-direction: row-reverse;
   }
 
-  .section img {
+  .section .img-1 {
+    width: 0;
+  }
+
+  .section .img-2 {
     width: 50%;
     min-width: 400px;
     margin-top: 0;

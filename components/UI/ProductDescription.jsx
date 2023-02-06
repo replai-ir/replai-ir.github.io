@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import classes from "./ProductDescription.module.css";
 
-function ProductDescription({ title, description, image, imageAlt }) {
+function ProductDescription({ title, description, image, imageAlt, mobImage }) {
   return (
     <section className={classes.section}>
       <div>
@@ -10,7 +10,8 @@ function ProductDescription({ title, description, image, imageAlt }) {
         <p>{description}</p>
       </div>
       <div className="space"></div>
-      <Image src={image} alt={imageAlt} />
+      <Image src={mobImage} alt="" className={classes["img-1"]} />
+      <Image src={image} alt={imageAlt} className={classes["img-2"]} />
     </section>
   );
 }

@@ -11,9 +11,11 @@ import ProductDescription from "../components/UI/ProductDescription";
 import heroImage from "../public/assets/image/hero_image.svg";
 
 import analaysisCommentsImage from "../public/assets/image/analysis-comments_image.svg";
+import analaysisCommentsImageMob from "../public/assets/image/analysis-comments_image__mob.svg";
+
 import appStoreImage from "../public/assets/image/app-store_image.svg";
 import autoReplyImage from "../public/assets/image/auto-reply_image.svg";
-import identificationCommentsImage from "../public/assets/image/identification-comments_image.svg";
+import autoReplyImageMob from "../public/assets/image/auto-reply_image__mob.svg";
 
 import allCommentsIcon from "../public/assets/svg/all-comments_icon.svg";
 import positiveCommentsIcon from "../public/assets/svg/positive-comments_icon.svg";
@@ -74,6 +76,7 @@ function HomePage() {
       description:
         "ریپلای نظرات کاربران را به صورت خودکار و با سرعت بالا تحلیل می‌کند و در دسته‌بندی‌های مشخص قرار می‌دهد",
       image: analaysisCommentsImage,
+      mobImage: analaysisCommentsImageMob,
       imageAlt: "analysis-comments",
     },
     {
@@ -81,6 +84,7 @@ function HomePage() {
       description:
         "ریپلای نظرات کاربران شما در مارکت های مختلف را جمع آوری کرده و به صورت یکجا در یک پنل واحد نمایش می‌دهد",
       image: appStoreImage,
+      mobImage: appStoreImage,
       imageAlt: "app-store",
     },
     {
@@ -88,6 +92,7 @@ function HomePage() {
       description:
         "ریپلای به سلیقهٔ شما به نظراتی که نیازمند پاسخ هست به صورت خودکار پاسخ می‌دهد",
       image: autoReplyImage,
+      mobImage: autoReplyImageMob,
       imageAlt: "auto-reply",
     },
   ];
@@ -131,6 +136,7 @@ function HomePage() {
             title={productDes.title}
             description={productDes.description}
             image={productDes.image}
+            mobImage={productDes.mobImage}
             imageAlt={productDes.imageAlt}
           />
         ))}
@@ -156,12 +162,12 @@ function HomePage() {
           <Image
             src={mainPieChart}
             alt="main-pie-chart"
-            className="-z-10 absolute left-0 top-1/2 -translate-y-1/2"
+            className="w-0 -z-10 absolute left-0 top-1/2 -translate-y-1/2 md:w-[700px]"
           />
           <Image
             src={mainComments}
             alt="main-comments"
-            className="-z-10 absolute right-0 top-1/2 -translate-y-1/2"
+            className="w-0 -z-10 absolute right-0 top-1/2 -translate-y-1/2 md:w-[700px]"
           />
         </div>
 
