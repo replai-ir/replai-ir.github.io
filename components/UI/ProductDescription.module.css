@@ -7,10 +7,6 @@
   margin: 5vh 0;
 }
 
-.section:first-child {
-  margin-right: 2rem;
-}
-
 .section:nth-of-type(2n):first-child,
 .section:nth-of-type(2n):last-child {
   width: 100px;

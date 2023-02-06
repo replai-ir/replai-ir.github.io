@@ -70,23 +70,23 @@ function HomePage() {
 
   const productDescroptions = [
     {
-      title: "تحلیل نظرات کاربران",
+      title: "تحلیل و دسته‌بندی خودکار نظرات کاربران",
       description:
-        "ریپلای اطلاعات جامعی از نظرات کاربران در ,اختیار شما قرار می دهد",
+        "ریپلای نظرات کاربران را به صورت خودکار و با سرعت بالا تحلیل می‌کند و در دسته‌بندی‌های مشخص قرار می‌دهد",
       image: analaysisCommentsImage,
       imageAlt: "analysis-comments",
     },
     {
       title: "کافه بازار و گوگل پلی یکجا در پنل ریپلای شما",
       description:
-        "ریپلای نظرات دریافتی در مارکت های مختلف را تجمیع کرده و یکجا در اختیار شما قرار می دهد",
+        "ریپلای نظرات کاربران شما در مارکت های مختلف را جمع آوری کرده و به صورت یکجا در یک پنل واحد نمایش می‌دهد",
       image: appStoreImage,
       imageAlt: "app-store",
     },
     {
       title: "پاسخگویی خودکار به نظرات",
       description:
-        "ریپلای به سلیقه شما به نظراتی که نیاز پاسخ شما دارند،‌ به صورت خودکار پاسخ می دهد",
+        "ریپلای به سلیقهٔ شما به نظراتی که نیازمند پاسخ هست به صورت خودکار پاسخ می‌دهد",
       image: autoReplyImage,
       imageAlt: "auto-reply",
     },
@@ -104,29 +104,28 @@ function HomePage() {
         />
       </Head>
 
-      <div className="flex flex-row justify-between items-center min-h-[90vh] pl-8 mb-[10vh] ">
-        <div className="mar-right md:w-[45%] lg:w-[50%]">
-          <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
-          <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
-            ریپلای نظرات دریافتی در پنل کافه بازار و گوگل پلی را تحلیل و دسته
-            بندی می کند و به صورت خودکار پاسخ می دهد
-          </p>
-          <Button className="bg-blueColor text-whiteColor">
-            <Link href={app_url} className="link">
-              ورود به ریپلای
-            </Link>
-          </Button>
+      <main className="w-main">
+        <div className="flex flex-row justify-between items-center min-h-[90vh] mb-[10vh] ">
+          <div className="md:w-[45%] lg:w-[50%]">
+            <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
+            <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
+              ریپلای نظرات کاربران شما در کافه بازار و گوگل پلی را با کمک هوش
+              مصنوعی رصد می کند و به صورت خودکار پاسخ می دهد
+            </p>
+            <Button className="bg-blueColor text-whiteColor">
+              <Link href={app_url} className="link">
+                ورود به ریپلای
+              </Link>
+            </Button>
+          </div>
+          <div className="relative w-[0] md:w-[40%] lg:w-[45%]">
+            <Image
+              src={heroImage}
+              alt="hero"
+              className="w-full absolute left-0 top-1/2 -translate-y-1/2"
+            />
+          </div>
         </div>
-        <div className="relative w-[0] md:w-[40%] lg:w-[45%]">
-          <Image
-            src={heroImage}
-            alt="hero"
-            className="w-full absolute left-0 top-1/2 -translate-y-1/2"
-          />
-        </div>
-      </div>
-
-      <main className="w-[75%] mx-auto sm:w-[85%] md:w-[80%] lg:w-[75%] xl:w-[70%] 2xl:w-[65%]">
         {productDescroptions.map((productDes) => (
           <ProductDescription
             key={productDes.title}

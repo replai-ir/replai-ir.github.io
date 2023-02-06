@@ -9,6 +9,7 @@ function ProductDescription({ title, description, image, imageAlt }) {
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
+      <div className="space"></div>
       <Image src={image} alt={imageAlt} />
     </section>
   );

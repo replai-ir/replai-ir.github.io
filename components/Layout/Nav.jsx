@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="mt-[1.875rem] mar-right list-none">
+    <nav className="w-main mt-[1.875rem] list-none">
       <li className="flex items-center">
         <Link href="/">
           <Image

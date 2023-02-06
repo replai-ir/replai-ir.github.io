@@ -11,8 +11,16 @@
     @apply flex flex-col justify-between items-center min-h-[60vh] mt-[40vh] mb-[40vh];
   }
 
+  .w-main {
+    @apply w-[80%] mx-auto sm:w-[85%] md:w-[85%] xl:w-[85%] 2xl:w-[70%];
+  }
+
   .mar-right {
     @apply mr-[2rem] md:mr-[8rem];
+  }
+
+  .space {
+    min-width: 5%;
   }
 }
 
@@ -71,7 +79,7 @@ h2 {
 p {
   font-size: 1rem;
   font-weight: 400;
-  max-width: 370px;
+  max-width: 420px;
   color: #404040;
 }
 
