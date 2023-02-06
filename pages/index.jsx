@@ -35,25 +35,25 @@ function HomePage() {
 
   const statisticsArray = [
     {
-      statistics: 687457,
+      statistics: 154225,
       title: "کل نظرات تحلیل شده",
       icon: allCommentsIcon,
       color: "#9AAAFF",
     },
     {
-      statistics: 35457,
+      statistics: 138119,
       title: "نظرات احساس مثبت",
       icon: positiveCommentsIcon,
       color: "#4ECDC4",
     },
     {
-      statistics: 1931,
+      statistics: 6864,
       title: "نظرات اعتراض به قیمت",
       icon: protestpriceCommentsIcon,
       color: "#FD8A9C",
     },
     {
-      statistics: 10348,
+      statistics: 11435,
       title: "نظرات اشکال فنی",
       icon: technicalissuesCommentsIcon,
       color: "#FDCC7C",
@@ -167,13 +167,13 @@ function HomePage() {
 
         <div className="section-type2 justify-center">
           <h2>به ما اعتماد کرده‌اند</h2>
-          <div className="grid grid-cols-2 gap-[4rem] place-items-center items-center w-full mt-12 md:mt-[8rem] lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-[4rem] place-items-center items-center w-[80%] mt-12 md:w-full md:mt-[8rem] lg:grid-cols-5">
             {colabs.map((colab) => (
               <Image
                 key={colab.alt}
                 src={colab.image}
                 alt={colab.alt}
-                className="flex justify-center"
+                className="flex justify-center mb-8 sm:mb-0"
               />
             ))}
           </div>
