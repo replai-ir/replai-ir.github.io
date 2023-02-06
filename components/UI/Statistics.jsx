@@ -4,9 +4,9 @@ import { convertDigitToSplitShape } from "../../functions/digit";
 
 export default function Statistics({ statistics, title, icon, color }) {
   return (
-    <div className="flex justify-start items-center w-[60%] mx-auto sm:w-[48%]">
+    <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-start">
       <div
-        className={`flex justify-center items-center min-w-[54px] min-h-[54px] ml-4 rounded-md`}
+        className={`flex justify-center items-center min-w-[54px] min-h-[54px] ml-0 mb-4 rounded-md sm:ml-4 sm:mb-0`}
         style={{ backgroundColor: color }}
       >
         <Image src={icon} alt={title} />

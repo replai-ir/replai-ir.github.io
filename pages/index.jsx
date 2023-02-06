@@ -109,7 +109,7 @@ function HomePage() {
           className="flex flex-col-reverse justify-between items-center min-h-[90vh] mb-[10vh]
         sm:flex-row "
         >
-          <div className="w-full md:w-[45%] lg:w-[50%]">
+          <div className="flex flex-col justify-center items-center w-full md:items-start md:w-[45%] lg:w-[50%]">
             <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
             <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
               ریپلای نظرات کاربران شما در کافه بازار و گوگل پلی را با کمک هوش
@@ -137,7 +137,7 @@ function HomePage() {
 
         <div className="section-type2">
           <h2>آمار ریپلای تاکنون</h2>
-          <div className="flex flex-wrap justify-between w-full min-h-[330px] py-[3.5rem] px-[2rem] mt-[3.25rem] bg-grayColor gap-4 md:px-[4rem] md:grid-cols-2 lg:px-[6rem] sm:pr-[6rem] md:pr-[8rem] lg:pr-[12rem] xl:pr-[14rem]">
+          <div className="grid grid-cols-2 items-center w-full min-h-[330px] px-4 mt-[1rem] bg-grayColor gap-4 rounded-xl sm:py-[3.5rem] sm:px-[2rem] sm:pr-[8rem] md:px-[4rem] md:mt-[3.25rem] md:pr-[8rem] lg:px-[6rem] lg:pr-[14rem] xl:pr-[20rem]">
             {statisticsArray.map((statisticsItem) => (
               <Statistics
                 key={statisticsItem.title}
@@ -147,8 +147,6 @@ function HomePage() {
                 color={statisticsItem.color}
               />
             ))}
-
-            {/* <Image src={allCommentsIcon} alt="all-comments" /> */}
           </div>
         </div>
 
@@ -169,7 +167,7 @@ function HomePage() {
 
         <div className="section-type2 justify-center">
           <h2>به ما اعتماد کرده‌اند</h2>
-          <div className="grid grid-cols-2 gap-[4rem] place-items-center items-center w-full mt-[8rem] md:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-[4rem] place-items-center items-center w-full mt-12 md:mt-[8rem] lg:grid-cols-5">
             {colabs.map((colab) => (
               <Image
                 key={colab.alt}
@@ -182,23 +180,23 @@ function HomePage() {
         </div>
 
         {/* give try replai  */}
-        <div
-          className="flex flex-col justify-center items-center w-full h-[40vh] mb-[20vh] rounded-2xl bg-blueColor bg-cover bg-center md:h-[80vh]
-      "
-          style={{
-            backgroundImage: `url('assets/image/give_replai_try.svg')`,
-          }}
-        >
-          <p className="try-replai max-w-[700px] px-8 mb-[2.25rem] text-center text-2xl text-whiteColor md:text-5xl">
-            ریپلای، تجربه بهتری رو در اختیار کاربرانتون قرار می‌دهد
-          </p>
-          <Button className="bg-whiteColor text-blueColor cursor-pointer">
-            <Link href={app_url} className="link">
-              ورود به ریپلای
-            </Link>
-          </Button>
-        </div>
       </main>
+      <div
+        className="flex flex-col justify-center items-center w-screen h-[55vh] px-8 mb-[15vh] rounded-0 bg-blueColor bg-cover bg-center sm:w-[85%] sm:mx-auto md:h-[80vh] md:mb-[20vh] sm:rounded-2xl
+      "
+        style={{
+          backgroundImage: `url('assets/image/give_replai_try.svg')`,
+        }}
+      >
+        <p className="try-replai max-w-[700px] mb-[2.25rem] text-center text-3xl text-whiteColor md:px-8 md:text-5xl">
+          ریپلای تجربهٔ بهتری را برای شما و کاربران شما به همراه خواهد داشت.
+        </p>
+        <Button className="bg-whiteColor text-blueColor cursor-pointer">
+          <Link href={app_url} className="link">
+            ورود به ریپلای
+          </Link>
+        </Button>
+      </div>
       <Footer />
     </Layout>
   );

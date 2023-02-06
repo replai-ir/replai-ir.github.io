@@ -16,6 +16,7 @@ module.exports = {
         helveticNeue: ["Helvetic Neue"],
       },
       fontSize: {
+        "3xl": ["2.25rem", "3.7rem"],
         "4xl": ["2rem", "3rem"],
         "5xl": ["2.5rem", "3.5rem"],
       },
