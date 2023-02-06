@@ -105,8 +105,11 @@ function HomePage() {
       </Head>
 
       <main className="w-main">
-        <div className="flex flex-row justify-between items-center min-h-[90vh] mb-[10vh] ">
-          <div className="md:w-[45%] lg:w-[50%]">
+        <div
+          className="flex flex-col-reverse justify-between items-center min-h-[90vh] mb-[10vh]
+        sm:flex-row "
+        >
+          <div className="w-full md:w-[45%] lg:w-[50%]">
             <h1>مدیریت نظرات کاربران از طریق هوش مصنوعی</h1>
             <p className="mt-[1.675rem] mb-[3.25rem] max-w-[420px]">
               ریپلای نظرات کاربران شما در کافه بازار و گوگل پلی را با کمک هوش
@@ -118,12 +121,8 @@ function HomePage() {
               </Link>
             </Button>
           </div>
-          <div className="relative w-[0] md:w-[40%] lg:w-[45%]">
-            <Image
-              src={heroImage}
-              alt="hero"
-              className="w-full absolute left-0 top-1/2 -translate-y-1/2"
-            />
+          <div className="w-full my-[15vh] sm:my-0 md:w-[40%] lg:w-[45%]">
+            <Image src={heroImage} alt="hero" className="w-full" />
           </div>
         </div>
         {productDescroptions.map((productDes) => (

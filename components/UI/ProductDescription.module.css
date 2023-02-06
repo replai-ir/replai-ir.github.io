@@ -1,10 +1,15 @@
 .section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: flex-start;
   min-height: 90vh;
   margin: 5vh 0;
+}
+
+.section:nth-of-type(2n) div:last-of-type,
+.section:nth-of-type(2n + 1) div:first-of-type {
+  margin-top: 2rem;
 }
 
 .section:nth-of-type(2n):first-child,

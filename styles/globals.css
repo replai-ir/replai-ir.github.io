@@ -12,7 +12,7 @@
   }
 
   .w-main {
-    @apply w-[80%] mx-auto sm:w-[85%] md:w-[85%] xl:w-[85%] 2xl:w-[70%];
+    @apply w-[85%] mx-auto sm:w-[85%] md:w-[85%] xl:w-[85%] 2xl:w-[70%];
   }
 
   .mar-right {
@@ -54,6 +54,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 html {
@@ -63,7 +64,7 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   max-width: 400px;
   color: #404040;
@@ -77,9 +78,10 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   max-width: 420px;
+  line-height: 2.3rem;
   color: #404040;
 }
 
@@ -103,6 +105,9 @@ img {
 @media screen and (min-width: 640px) {
   html {
     font-size: 12px;
+  }
+  * {
+    text-align: initial;
   }
 }
 
